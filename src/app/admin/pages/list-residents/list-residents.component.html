@@ -1,0 +1,42 @@
+<div class="container">
+    <!-- <button mat-button routerLink="newadmin">Nuevo Residente</button> -->
+    <div class="row">
+      <div class="col-md-4"> <button routerLink="add" type="button" class="btn btn-primary m-3">Nuevo Residente</button></div>
+
+      <div class="col-md-4 ms-auto mt-3">
+        <form class="d-flex" role="search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+          </form>
+      </div>
+    </div>
+
+    <h1>Residentes</h1>
+  
+  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Apellido</th>
+          <th scope="col">Telefono</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Eliminar</th>
+  
+        </tr>
+      </thead>
+
+      <tbody *ngFor="let resident of residents">
+        <tr>
+          <th scope="row">{{resident.id}}</th>
+          <td>{{resident.name}}</td>
+          <td>{{resident.lastname}}</td>
+          <td>{{resident.phone}}</td>
+          <td><button mat-button ><mat-icon>edit</mat-icon></button></td>
+          <td><button mat-button (click)="onDeleteResident()" ><mat-icon>delete</mat-icon></button></td>
+        </tr>
+        <tr>
+      </tbody>
+    </table>
+  
+  </div>

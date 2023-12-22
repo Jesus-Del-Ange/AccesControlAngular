@@ -1,0 +1,62 @@
+{
+  "administrators": [
+    {
+      "id": 1,
+      "name": "Jesus",
+      "lastname": "Del Angel",
+      "phone": "7891069317",
+      "email": "jesusdelangel235@gmail.com",
+      "password": "Adidasj57"
+    }
+  ],
+  "residents": [
+    {
+      "id": 1,
+      "name": "Oscar Gabriel",
+      "lastname": "Herrera",
+      "email": "oscarherrera@gmail.com",
+      "phone": "7891069317",
+      "address": "Las flores",
+      "password": "Adidasj57"
+    },
+    {
+      "id": 2,
+      "name": "Julio",
+      "lastname": "Mesaa",
+      "email": "juliomesa@gmail.com",
+      "phone": "7891083298",
+      "address": "jardines",
+      "password": "Adidasj57"
+    },
+    {
+      "id": 3,
+      "name": "Rodrigo",
+      "lastname": "Juarez",
+      "email": "rodirgolo310@gmail.com",
+      "phone": "7899910011",
+      "address": "Benito Juarez",
+      "password": "Adidasj57 mmmm",
+      "lastName": "Lopez"
+    },
+    {
+      "id": "4",
+      "name": "Fortunato",
+      "lastname": "Ortiz",
+      "phone": "7891004759",
+      "address": "O",
+      "email": "fortiz@gmail.com",
+      "password": "Adidasj57"
+    }
+  ],
+  "guards": [
+    {
+      "id": 1,
+      "name": "Fernando",
+      "lastname": "Ramirez",
+      "phone": "7891111885",
+      "company": "SSP",
+      "email": "fer_ramirez2000@gmail.com",
+      "password": "Adidasj57"
+    }
+  ]
+}

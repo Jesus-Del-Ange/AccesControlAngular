@@ -1,0 +1,34 @@
+{
+    "administrators":[
+        {
+            "id":1,
+            "name":"Jesus",
+            "lastname":"Del Angel",
+            "phone":"7891069317",
+            "email":"jesusdelangel235@gmail.com",
+            "password":"Adidasj57"
+        }
+    ],
+    "residents":[
+        {
+            "id":1,
+            "name":"Oscar",
+            "lastname":"Herrera",
+            "email":"oscarherrera@gmail.com",
+            "phone":"7891108007",
+            "address":"Las flores",
+            "password":"Adidasj57"
+        }
+    ],
+    "guards":[
+        {
+            "id":1,
+            "name":"Fernando",
+            "lastname":"Ramirez",
+            "phone":"7891111885",
+            "company":"SSP",
+            "email":"fer_ramirez2000@gmail.com",
+            "password":"Adidasj57"
+        }
+    ]
+}

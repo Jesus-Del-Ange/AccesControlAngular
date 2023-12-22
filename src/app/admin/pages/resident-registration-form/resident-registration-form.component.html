@@ -1,0 +1,141 @@
+<div class="limiter">
+    <div class="container-login100" style="background-image: url('../assets/image/fondoAC2.jpg');">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+
+            <form [formGroup]="residentForm" (ngSubmit)="onSave()" class="login100-form" autocomplete="off">
+
+                <span class="login100-form-title p-b-54">
+                    {{currentResident.id ? 'Editar': 'Agregar'}} Residente
+                </span>
+
+                <div class="wrap-input100 m-b-23">
+                    <span class="label-input100">Id</span>
+                    <input class="input100"
+                           type="text"
+                           formControlName="id"
+                           placeholder="ID">
+                           <!-- *ngIf="residentForm.controls['name'].getError('required') && residentForm.controls['name'].touched"       Esta es una manera de usarlo dentro del span--> 
+                    <span *ngIf="isValidField('id')"
+                          class=" form-text text-danger">
+                          {{ getFieldError('id') }}
+                    </span>
+                    <!-- <span class="focus-input100"></span> -->
+                </div>
+
+                <div class="wrap-input100 m-b-23">
+                    <span class="label-input100">Nombre</span>
+                    <input class="input100"
+                           type="text"
+                           formControlName="name"
+                           placeholder="Nombres">
+                           <!-- *ngIf="residentForm.controls['name'].getError('required') && residentForm.controls['name'].touched"       Esta es una manera de usarlo dentro del span--> 
+                    <span *ngIf="isValidField('name')"
+                          class=" form-text text-danger">
+                          {{ getFieldError('name') }}
+                    </span>
+                    <!-- <span class="focus-input100"></span> -->
+                </div>
+
+                <div class="wrap-input100 m-b-23">
+                    <span class="label-input100">Apellido</span>
+                    <input class="input100"
+                           type="text"
+                           formControlName="lastname" 
+                           placeholder="Apellidos">
+                    <span *ngIf="isValidField('lastname')"
+                          class=" form-text text-danger">Los Apellidos son requeridos</span>
+                    <!-- <span class="focus-input100"></span> -->
+                </div>
+
+                <div class="wrap-input100 m-b-23">
+                    <span class="label-input100">Telefono</span>
+                    <input class="input100"
+                           type="tel"
+                           formControlName="phone"
+                           placeholder="Numero de telefono">
+                    <span *ngIf="isValidField('phone')"
+                          class=" form-text text-danger">La longitud no es correcta</span>
+                </div>
+
+                <div class="wrap-input100 m-b-23">
+                    <span class="label-input100">Direccion</span>
+                    <input class="input100"
+                           type="text"
+                           formControlName="address"
+                           placeholder="Direccion">
+                    <span *ngIf="isValidField('address')"
+                          class="form-text text-danger">Direccion requerida</span>
+                </div>
+
+                <div class="wrap-input100 m-b-23">
+                    <span class="label-input100">Correo</span>
+                    <input class="input100"
+                           type="email"
+                           formControlName="email"
+                           placeholder="Correo electrónico">
+                    <span *ngIf="isValidField('email')"
+                          class="form-text text-danger">
+                          {{ getFieldError('email') }}
+                    </span>
+                </div>
+
+                <div class="wrap-input100">
+                    <span class="label-input100">Contraseña</span>
+                    <input class="input100"
+                           type="password"
+                           formControlName="password"
+                           placeholder="Ingrese su contraseña">
+                    <span *ngIf="isValidField('password')"
+                          class="form-text text-danger">Contraseña requerida</span>
+                    <!-- <span class="focus-input100"></span> -->
+                </div>
+
+            </form>
+
+            <div class="text-right p-t-8 p-b-31"></div>
+
+            <div class="container-login100-form-btn">
+                <div class="wrap-login100-form-btn">
+                    <div class="login100-form-bgbtn"></div>
+                    <button class="login100-form-btn"  (click)="onSave()">
+                    <!-- <button type="submit">Registrar</button>  esto se pone cuando  el boton esta dentro del formulario.-->
+                        {{currentResident.id ? 'Editar': 'Agregar'}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- <pre>
+
+    {{ currentResident | json}}
+</pre>
+ -->
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="col">
+    <span>Valid</span>
+    <pre>{{residentForm.valid| json }}</pre>
+    
+    <span>Pristine</span>
+    <pre>{{residentForm.pristine| json }}</pre>
+    
+    <span>Touched</span>
+    <pre>{{residentForm.touched| json }}</pre>
+    
+    <span>value</span>
+    <pre>{{residentForm.value| json }}</pre>
+</div> -->
